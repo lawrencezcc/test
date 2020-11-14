@@ -1,6 +1,6 @@
 
 function isSameIsland(grid, row1, col1, row2, col2) {
-    const nearby = isNearby({x: row1, y: col1}, {x: row2, y: col2});
+    const nearby = isNearby({x: row1, y: col1}, {x: row2, y: col2}, grid);
     if (!nearby) {
         return false;
     }
