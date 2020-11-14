@@ -5,7 +5,7 @@ function isSameIsland(grid, row1, col1, row2, col2) {
         return false;
     }
 
-    if (grid[row1][col1] === 1 && grid[row2][col2] === 1) {
+    if (grid[row1 - 1][col1 - 1] === 1 && grid[row2 - 1][col2 - 1] === 1) {
         return true;
     }
 }
